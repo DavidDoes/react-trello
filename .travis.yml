@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: Pr1U0WvxOI9X4UNTAbPgQFulqvMZhRmRd+SVGZ17aX3vtWZQeW+xRBrUeiK5kYPseJmveYeIkh9QhW9sywy0daj7l6Vw3NO7IjtLIXv3tI05HHjurf48TMqSs909BqTE1tFwxKA5vPiOpnqBAGEiMxw+/pUVeohSYO2EJWZ4CQnQI9UsLn4p4eTtGRu4SmK4ZBZElXC4GMtAk4VSM3yqTcpmVtA+BHT7yHiPnibmGxjkHSzTncZf3EcJLI3b2xUawbOxMUZWZEsjl3glzM5/Gw1pMX4cLg6Z48t0Wn2Em/q3sofeZxUdURIS83hMvtffKNiqTF8EpezmbyvYenr9js9LDYGqn6dmiAY1znT0BDow8Ysa0XYCgFx+g0u8+C3ivJ6XjOWaFZW8Cz7pAAy1ucRL9GqDKwJQvFYkuQDQUC4agG0JgxinVD9I2E0F/ypL/NI7zGwTjAC7znLtw9BdgrMaawLDxO5eNRRvgWTfRhuPEZtINuHdKiY1Dw1LjaqMRt1G86jO+h2O6g6YchQZhH/fvMPR/qXwMd/EDj8ikTRxt9Wh1JSHQLOFAyzE/wtpEFtx1m6KOSco8VAohVzaojHVCPQ4jJsJDjORFHaVt5DDMixoxxxed0I5XuVx8LKZMeUt0jHlNWUY70HNKfvO1DLGKqKHcih/rFnBv6LrAIU=
+  app: vast-mountain-88747
+  on:
+    repo: DavidDoes/react-trello
